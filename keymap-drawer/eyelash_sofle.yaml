@@ -37,7 +37,7 @@ layers:
   - J
   - K
   - L
-  - {t: ;, s: ':'}
+  - ':'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-control$$
   - Z
@@ -51,19 +51,19 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '''', s: '"'}
+  - $$mdi:backspace-reverse-outline$$
   - $$mdi:volume-off$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  - F4
   - {t: '$$mdi:keyboard-space$$', h: '3'}
   - {t: '$$mdi:keyboard-space$$', h: layer1}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '2'
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:backspace-reverse-outline$$
+  - Gui+L
   layer1:
   - {t: '`', s: '~'}
   - F1
@@ -93,9 +93,9 @@ layers:
   - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+Sft+$$mdi:arrow-right-bold$$
+  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
+  - PRINTSCREEN
   - '&mkp MB5'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - PG DN
@@ -147,8 +147,8 @@ layers:
   - $$mdi:bluetooth-off$$
   - BT CLR ALL
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - (
+  - )
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
