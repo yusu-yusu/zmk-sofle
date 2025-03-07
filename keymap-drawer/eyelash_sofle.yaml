@@ -44,7 +44,7 @@ layers:
   - X
   - C
   - V
-  - B
+  - {t: B, h: '$$mdi:apple-keyboard-option$$'}
   - $$mdi:arrow-right-bold$$
   - N
   - M
