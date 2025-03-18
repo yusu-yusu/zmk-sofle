@@ -13,7 +13,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - INTERNATIONAL 2
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - {t: '-', s: _}
+  - ':'
   - $$mdi:apple-keyboard-shift$$
   - A
   - S
@@ -38,32 +38,32 @@ layers:
   - J
   - K
   - L
-  - ':'
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '-', s: _}
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
   - V
-  - {t: B, h: '$$mdi:apple-keyboard-option$$'}
+  - B
   - $$mdi:arrow-right-bold$$
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:backspace-reverse-outline$$
+  - $$mdi:apple-keyboard-option$$
   - Gui+L
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  - F4
+  - {t: F4, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-space$$', h: '3'}
   - {t: '$$mdi:keyboard-space$$', h: layer1}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '2'
-  - INTERNATIONAL 2
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '3', h: toggle}
   layer1:
   - {t: '`', s: '~'}
@@ -125,7 +125,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
