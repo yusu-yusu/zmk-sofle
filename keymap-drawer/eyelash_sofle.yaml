@@ -39,7 +39,7 @@ layers:
   - K
   - L
   - {t: '-', s: _}
-  - {t: ;, s: ':'}
+  - ':'
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -63,7 +63,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '2'
-  - _
+  - Sft+INTERNATIONAL 1
   - {t: '3', h: toggle}
   layer1:
   - {t: '`', s: '~'}
