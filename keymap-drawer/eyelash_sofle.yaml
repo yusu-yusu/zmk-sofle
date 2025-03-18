@@ -13,7 +13,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - INTERNATIONAL 2
+  - INTERNATIONAL 4
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -39,7 +39,7 @@ layers:
   - K
   - L
   - {t: '-', s: _}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: ;, s: ':'}
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -52,7 +52,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-option$$
+  - INTERNATIONAL 5
   - Gui+L
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
@@ -63,7 +63,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '2'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - _
   - {t: '3', h: toggle}
   layer1:
   - {t: '`', s: '~'}
