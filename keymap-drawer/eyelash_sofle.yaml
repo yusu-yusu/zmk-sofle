@@ -13,7 +13,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - INTERNATIONAL 4
+  - LANGUAGE 1
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -52,7 +52,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - INTERNATIONAL 5
+  - LANGUAGE 2
   - Gui+L
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
