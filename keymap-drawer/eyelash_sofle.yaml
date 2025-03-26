@@ -39,7 +39,7 @@ layers:
   - K
   - L
   - {t: '-', s: _}
-  - +
+  - KP EQUAL AS400
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
