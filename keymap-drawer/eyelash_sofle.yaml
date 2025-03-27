@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - A
+  - '{'
   - $$mdi:apple-keyboard-shift$$
   - A
   - S
@@ -207,7 +207,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '*'
+  - Sft+KP MINUS
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -220,7 +220,7 @@ layers:
   - KP 7
   - KP 8
   - KP 9
-  - +
+  - Sft+{
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -258,5 +258,5 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - KP 0
-  - {t: '=', s: +}
+  - {t: Sft+-, s: Sft+_}
   - {t: LAYER0, h: toggle}
