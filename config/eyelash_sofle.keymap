@@ -28,7 +28,6 @@
 
 &soft_off { hold-time-ms = <2000>; };
 
-
 / {
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
