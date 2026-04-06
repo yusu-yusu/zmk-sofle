@@ -328,3 +328,5 @@ layers:
 combos:
 - p: [14, 28, 40]
   k: '&soft_off'
+- p: [42, 43]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
