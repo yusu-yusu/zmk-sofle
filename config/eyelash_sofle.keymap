@@ -47,6 +47,11 @@
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
         };
+
+        Enter {
+            bindings = <&kp ENTER>;
+            key-positions = <42 43>;
+        };
     };
 
     macros {
@@ -135,4 +140,3 @@
         };
     };
 };
-
