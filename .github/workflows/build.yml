@@ -1,4 +1,4 @@
-name: Build ZMK firmware (Self-Hosted Workflow)
+name: Build ZMK firmware (DYA Studio Sofle)
 
 on:
   push:
@@ -13,70 +13,53 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. チェックアウト
-      - name: Checkout config
+      - name: Checkout
         uses: actions/checkout@v4
 
-      # 2. ZMK を取得（指定バージョン）
       - name: Clone ZMK
         run: |
           git clone https://github.com/zmkfirmware/zmk.git --branch v0.3.0 --depth 1 zmk
-          ls -la zmk
 
-      # 3. west のセットアップ
       - name: Install west
-        run: |
-          pip install west
+        run: pip install west
 
-      # 4. Zephyr SDK のセットアップ
       - name: Install Zephyr SDK
         run: |
           wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.16.1/zephyr-sdk-0.16.1_linux-x86_64.tar.xz
           tar -xf zephyr-sdk-0.16.1_linux-x86_64.tar.xz
           sudo mv zephyr-sdk-0.16.1 /opt/zephyr-sdk
 
-      # 5. ZMK の west 初期化
-      - name: West Init + Update
+      - name: West Init
         working-directory: zmk/app
         run: |
           west init -l .
           west update
 
-      # 6. ユーザーの zmk-sofle を ZMK の modules にリンク
-      - name: Add local zmk-config
+      - name: Add user config
         run: |
           mkdir -p zmk/config
           cp -r config/* zmk/config/
 
-      # 7. 環境変数（Zephyr バージョン固定）
-      - name: Set env
-        run: echo "ZEPHYR_TOOLCHAIN_VARIANT=zephyr" >> $GITHUB_ENV
-
-      # 8. ボードごとにビルド（左）
-      - name: Build left + nice_view
+      - name: Build left + NiceView
         working-directory: zmk/app
         run: |
           west build -s . -b eyelash_sofle_left -- -DSHIELD=nice_view -DZMK_EXTRA_MODULES="${GITHUB_WORKSPACE}"
 
-      # 9. ボードごとにビルド（右）
-      - name: Build right + nice_view_custom
+      - name: Build right
         working-directory: zmk/app
         run: |
           west build -s . -b eyelash_sofle_right -- -DSHIELD=nice_view_custom -DZMK_EXTRA_MODULES="${GITHUB_WORKSPACE}"
 
-      # 10. settings_reset
-      - name: Build settings_reset
+      - name: Build settings reset
         working-directory: zmk/app
         run: |
           west build -s . -b eyelash_sofle_left -- -DSHIELD=settings_reset -DZMK_EXTRA_MODULES="${GITHUB_WORKSPACE}"
 
-      # 11. アーティファクトとしてアップロード
-      - name: Upload firmware
+      - name: Upload UF2
         uses: actions/upload-artifact@v4
         with:
-          name: zmk-firmware
+          name: firmware
           path: zmk/app/build/zephyr/*.uf2
-          
 #name: Build ZMK firmware
 #on:
 #  workflow_dispatch:
