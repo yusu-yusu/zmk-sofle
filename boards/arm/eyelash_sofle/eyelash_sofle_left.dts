@@ -22,3 +22,6 @@
     status = "okay";
 };
 
+#include <input/processors.dtsi>
+#include <input/processors/runtime-input-processor.dtsi>
+#include <behaviors/battery_history_request.dtsi>
