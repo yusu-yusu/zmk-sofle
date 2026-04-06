@@ -22,3 +22,4 @@
     col-offset = <7>;
 };
 
+#include <behaviors/battery_history_request.dtsi>
